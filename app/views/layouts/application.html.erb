@@ -8,12 +8,32 @@
 </head>
 <body>
 
-  <h1>CargoHold</h1>
-  <hr>
+  <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">CargoHold</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Inventory</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+  </div>
 
-<%= yield %>
+  <div class="container">
+    <%= yield %>
+  </div>
 
-<hr>
+  <div class="container">
+    <div class="footer">
+      <hr>
+      &copy; 2015 General Assembly
+    </div>
+  </div>
 
 
 </body>
