@@ -6,3 +6,53 @@
   </div>
 
 </div>
+
+
+<div class="row">
+
+  <div class="col-md-12">
+    <table class="table table-hover">
+      <thead>
+        <th>
+          Item
+        </th>
+        <th>
+          Description
+        </th>
+        <th>
+          Checked Out?
+        </th>
+        <th>
+          Checked Out By
+        </th>
+        <th>
+          Nab it!
+        </th>
+      </thead>
+      <tbody>
+        <% @items.each do |item | %>
+
+          <tr>
+            <td>
+              <%= item.item_name %>
+            </td>
+            <td>
+              <%= item.item_description %>
+            </td>
+            <td>
+              <%= item.checked_out %>
+            </td>
+            <td>
+              <%= item.checked_out_by %>
+            </td>
+            <td>
+              
+            </td>
+          </tr>
+
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+
+</div>
